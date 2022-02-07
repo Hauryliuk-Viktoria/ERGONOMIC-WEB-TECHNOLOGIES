@@ -14,6 +14,14 @@ ___________________________
 
 * С закрытым доступом:
 
+```
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+
+RewriteEngine On
+RewriteRule ^/.htaccess /403.html
+```
+
 ![](3.png)
 
 * При попытке открыть несуществующую:
